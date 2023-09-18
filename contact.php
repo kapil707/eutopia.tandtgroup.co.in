@@ -69,9 +69,9 @@ $source = "eutopia_tandtgroup";
 			$sentmail = mail($to, $subject, $body, $header);       
 			$returnBody .= "Thanks, we will contact you soon";	
 			
-			/****************************************************
+			/****************************************************/
 			
-			hit_api($name,$mobile,$email,"landing_medalleo","IN");
+			hit_api($name,$mobile,$email,"google_ET","IN");
 			
 			/*
 			$curl = curl_init();
