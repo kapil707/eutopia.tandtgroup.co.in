@@ -2,7 +2,7 @@
 date_default_timezone_set("Asia/Kolkata");
 error_reporting(0);
 session_start();
-$source = "MedalleoMahagunindia";
+$source = "eutopia_tandtgroup";
    if(isset($_POST) && $_POST['mobile']){   
         /*if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){  
 			$msg="<span style='color:red'>The Validation code does not match!</span><br>";// Captcha verification is incorrect.		
@@ -37,7 +37,7 @@ $source = "MedalleoMahagunindia";
 		{
 			$message = "";//$_POST['massage'];
 			
-			$from = "MedalleoMahagunindia";
+			$from = "eutopia_tandtgroup";
 			$sql = "INSERT INTO leads (name, email, contact, msg, source,date,time,datetime) VALUES ('$name', '$email', '$mobile', '$massage','$source','$date','$time','$datetime')";	
 
 			if ($conn->query($sql) === TRUE) {
@@ -64,7 +64,7 @@ $source = "MedalleoMahagunindia";
 			$body .="<tr><td width='100%'  colspan='3'></td></tr>";
 			$body .="</table></body></html>";
 
-			$subject	= "Enquiry for Medalleo Mahagunindia";
+			$subject	= "Enquiry for Eutopia Tandtgroup";
 
 			$sentmail = mail($to, $subject, $body, $header);       
 			$returnBody .= "Thanks, we will contact you soon";	
